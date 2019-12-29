@@ -80,6 +80,7 @@ if (beltproducts.size()==1)
 public void launch_the_browser_for_the_search_of_bag() {
    
 	launch("https://www.facebook.com/");
+	System.out.println("xo");
 	
    
 }}
