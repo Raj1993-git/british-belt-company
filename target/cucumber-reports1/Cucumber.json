@@ -1,0 +1,51 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3791900,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "HooksClass.browserlaunch()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "launch of same bowser",
+        "description": "",
+        "id": "purchase-of-leather-good;launch-of-same-bowser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209600,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "launch the browser, for the search  of bag",
+            "match": {
+              "location": "BBC.launch_the_browser_for_the_search_of_bag()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@two"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase of leather good",
+    "description": "",
+    "id": "purchase-of-leather-good",
+    "keyword": "Feature",
+    "uri": "C:/Users/Rajasekar/Desktop/the british belt factory/Functional/src/test/resources/British.feature",
+    "tags": []
+  }
+]

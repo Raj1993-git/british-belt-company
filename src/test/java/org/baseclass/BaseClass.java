@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
 import org.Pageobjectmodule.Loginpage;
 import org.apache.poi.ss.usermodel.Cell;
@@ -53,7 +54,7 @@ public class BaseClass {
 			FileInputStream io= new FileInputStream(locationofBBC1);
 			Workbook w= new XSSFWorkbook(io);
 			Sheet s=w.getSheet("British Belt Company");
-			Row headerrow=s.getRow(0);
+			Row headerrow=s.getRow(0);// heading row 
 			for (int i = 0; i < s.getPhysicalNumberOfRows(); i++) {
 			Row row = s.getRow(i);
 				HashMap<String, String> mpdata= new HashMap<String, String>();
@@ -87,4 +88,10 @@ public class BaseClass {
 		acc.moveToElement(e).click();
 		
 		}
-}
+	public static void wt(int s) {
+	
+	driver.manage().timeouts().implicitlyWait(s, TimeUnit.SECONDS);
+	
+	}
+	}
+

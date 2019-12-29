@@ -23,8 +23,11 @@ import cucumber.api.java.en.When;
 
 public class BBC extends BaseClass  {
 	public static WebDriver driver;
+	
 	Loginpage l=new Loginpage();
 	@Given("launch the browser, get the url & login with valid login details, search for product")
+	
+	
 	public void launch_the_browser_get_the_url_login_with_valid_login_details_search_for_product() throws InterruptedException {
 	   launch("https://www.thebritishbeltcompany.co.uk/");
 	   
@@ -72,25 +75,11 @@ if (beltproducts.size()==1)
 			
 		}
 	
-			
+
+@Given("launch the browser, for the search  of bag")
+public void launch_the_browser_for_the_search_of_bag() {
+   
+	launch("https://www.facebook.com/");
 	
-
-	@When("customize the product by adding size colour quantity & proceed to checkout")
-	public void customize_the_product_by_adding_size_colour_quantity_proceed_to_checkout() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
-	}
-
-	@When("enter the valid address")
-	public void enter_the_valid_address() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
-	}
-
-	@Then("proceed to payment page using card")
-	public void proceed_to_payment_page_using_card() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
-	}
-
-}
+   
+}}

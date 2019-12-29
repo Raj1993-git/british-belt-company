@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="C:\\Users\\Rajasekar\\Desktop\\the british belt factory\\Functional\\src\\test\\resources\\British.feature",
-glue= {"org.belt.allclasses"},monochrome = true,dryRun = false,plugin = "json:target/cucumber-reports/cucumber:json")
+glue= {"org.belt.allclasses"},monochrome = true,dryRun = true,plugin = {"json:target/cucumber-reports1/Cucumber.json","rerun:rerun/failedScenarios.txt","html:target/cucumber-reports"},tags = {"~@one","@two"})
 public class TestRunner {
 
 }
